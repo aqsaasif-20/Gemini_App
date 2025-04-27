@@ -9,7 +9,7 @@ function App() {
   const submitHandler = (e) => {
     e.preventDefault();
     console.log(question);
-    axios.post("https://gemini-api-beta-seven.vercel.app/", {
+    axios.post("https://gemini-api-seven-lake.vercel.app/getResponse", {
       question: question
     })
     .then(res=>{
